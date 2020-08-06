@@ -36,7 +36,7 @@ public class BrowserOptions {
         edgeOptions.setExperimentalOption("prefs", chromeProfilePreferences());
         edgeOptions.addArguments("--start-maximized");
         edgeOptions.addArguments("disable-extensions", "disable-infobars", "disable-breakpad");
-        if (System.getenv("remoteServerUrl") != null) {
+        if (System.getenv("gridServerUrl") != null) {
             edgeOptions.addArguments("--start-fullscreen");
         }
         edgeOptions.addArguments("--disable-web-security");
@@ -83,7 +83,7 @@ public class BrowserOptions {
         chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         chromeOptions.setExperimentalOption("prefs", chromeProfilePreferences());
         chromeOptions.addArguments("--start-maximized");
-        if (System.getenv("remoteServerUrl") != null) {
+        if (System.getenv("gridServerUrl") != null) {
             chromeOptions.addArguments("--start-fullscreen");
         }
         chromeOptions.addArguments("--disable-web-security");
