@@ -47,6 +47,7 @@ try {
 
             junitPlatformTestTask.systemProperty 'junit.jupiter.execution.parallel.enabled', 'true'
             junitPlatformTestTask.systemProperty 'junit.jupiter.execution.parallel.config.strategy', 'fixed'
+            junitPlatformTestTask.systemProperty 'junit.jupiter.execution.parallel.config.fixed.parallelism', '3'
         }
     }
 } catch (Exception e) {
